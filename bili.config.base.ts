@@ -3,9 +3,14 @@ import type { Config } from "bili";
 const config: Config = {
   plugins: {
     typescript2: {
+      useTsconfigDeclarationDir: true,
       tsconfigOverride: {
         include: ["src"],
-        exclude: ["**/*.test.ts"]
+        exclude: ["**/*.test.ts"],
+        compilerOptions: {
+          declaration: true,
+          declarationDir: "./dist/types"
+        }
       }
     }
   },

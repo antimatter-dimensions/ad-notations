@@ -13,6 +13,7 @@
   "module": "dist/ad-notations.esm.js",
   "unpkg": "dist/ad-notations.umd.js",
   "jsdelivr": "dist/ad-notations.umd.js",
+  "types": "dist/types/index.d.ts",
   "keywords": [
     "notations",
     "numbers"
